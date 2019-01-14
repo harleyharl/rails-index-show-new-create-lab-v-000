@@ -2,6 +2,7 @@ require 'pry'
 class CouponsController < ApplicationController
 
   def index
+    binding.pry
     @coupons = Coupon.all
   end
 
@@ -16,4 +17,4 @@ class CouponsController < ApplicationController
     redirect_to coupon_path(@coupon)
   end
 
-end 
+end
